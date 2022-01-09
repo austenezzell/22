@@ -6,21 +6,19 @@ import Img from "gatsby-image"
 export default function Work({ data }) {
     
     const work = data.allMarkdownRemark.nodes;
-    console.log(work);
-    
 
+    
     return (
         <Layout>
             <div>
                 <h1>WORK</h1>
                 <div>
                     {work.map(project => (
-                        <Link to={"/work/" + project.frontmatter.slug} key={project.id}>
+                        <Link to={"/work" + project.frontmatter.slug} key={project.id}>
                             <div>
-                                {project.frontmatter.keyArtVideo !== null ?  <h1>{ project.frontmatter.keyArtVideo }</h1> : null}
-                                {project.frontmatter.keyArt !== null ? <Img fluid={ project.frontmatter.keyArt.childImageSharp.fluid }/> : null}
-                            {/* {project.frontmatter.keyArt? <h1>data</h1>: null } */}
-                                {/* <Img fluid={ project.frontmatter.keyArt.childImageSharp.fluid }/> */}
+                                { project.frontmatter.keyArtVideo ? <video autoPlay loop muted><source src={ project.frontmatter.keyArtVideo } type="video/mp4" /></video> : null }
+                                
+                                { !project.frontmatter.keyArtVideo ? <Img fluid={ project.frontmatter.keyArt.childImageSharp.fluid }/> : null }
                                 <h3>{ project.frontmatter.title }</h3>
                                 <p>{ project.frontmatter.date }</p>
                             </div>
@@ -36,7 +34,7 @@ export default function Work({ data }) {
 
 export const query = graphql`
 query Work {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
           date

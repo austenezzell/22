@@ -3,7 +3,7 @@ slug: "/hank-pdx"
 date: "2018"
 title: "Hank Willis Thomas"
 keyArt: ""
-keyArtVideo: "/static/hank.mp4"
+keyArtVideo: "/hank.mp4"
 
 ---
 
