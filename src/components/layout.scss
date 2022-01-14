@@ -47,6 +47,8 @@ $xl-type-max: unquote(($base-unit * 17) + 'px');
 $green: #24FF00;
 $light-gray: #F0F0F0;
 $purple: #9494FF;
+$yellow: #F0C734;
+$tan: #E1DAC0;
 
 // FONTS
 @font-face {
@@ -232,6 +234,9 @@ vr {
 }
 
 // FOOTER STYLES
+.say-hi {
+  margin: unquote(($base-unit * 12) + "px") 0;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -363,7 +368,7 @@ vr {
         grid-column: 4 / 10;
       }
     }
-    img {
+    img, video {
       width: 100%;
       height: auto;
     }
@@ -401,4 +406,41 @@ vr {
 }
 .footer-container {
   padding: 0 unquote(($base-unit * 2) + 'px');
+}
+
+
+// ARCHIVE PAGE
+.archive-page {
+  background: $tan;
+  .main-content {
+    margin-top: unquote(($base-unit * 8) + 'px');
+  }
+  .work-grid {
+    margin-top: unquote(($base-unit * 2) + 'px');
+    @extend .twelve-col;
+    .image {
+      grid-column: 1 / 6;
+    }
+    .description {
+      grid-column: 7 / 12;
+    }
+  }
+  .portrait {
+    aspect-ratio: 4 / 6;
+    align-self: center;
+  }
+  .landscape {
+    aspect-ratio: 6 / 4;
+    align-self: center;
+  }
+  .square {
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }       
+       
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
 }

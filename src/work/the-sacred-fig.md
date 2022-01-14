@@ -1,9 +1,10 @@
 ---
-slug: "/the-sacred-fig"
+slug: "the-sacred-fig"
 date: "2021"
 title: "The Sacred Fig"
 keyArt: "../images/work/fig/fig_0.jpg"
-keyArtVideo: 
+keyArtVideo: ""
+keyArtAspectRatio: "portrait"
 
 ---
 

@@ -1,9 +1,10 @@
 ---
-slug: "/hank-pdx"
+slug: "hank-pdx"
 date: "2018"
 title: "Hank Willis Thomas"
 keyArt: ""
 keyArtVideo: "/hank.mp4"
+keyArtAspectRatio: "landscape"
 
 ---
 

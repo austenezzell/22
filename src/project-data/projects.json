@@ -1,0 +1,48 @@
+[
+    {
+        "slug": "gogoro",
+        "date": "2014—2018",
+        "title": "Gogoro",
+        "keyArt": "../images/work/gogoro/gogoro_2.jpg",
+        "keyArtVideo": "",
+        "keyArtAspectRatio": "portrait",
+        "descriiption": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "../images/work/ringcentral/rcfwd3.jpg",
+                "class": "repeat"
+            },
+            {
+                "asset": "../images/work/ringcentral/rcfwd2.jpg",
+                "class": "centered"
+            },    
+            {
+                "asset": "../images/work/ringcentral/rcfwd1.jpg",
+                "class": "repeat"
+            }                   
+        ]  
+    },
+    {
+        "slug": "ringcentral",
+        "date": "2021",
+        "title": "RingCentral",
+        "keyArt": "../images/work/ringcentral/rcfwd3.jpg",
+        "keyArtVideo": "/rc_balance_2.mp4",
+        "keyArtAspectRatio": "portrait",
+        "descriiption": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "../images/work/ringcentral/rcfwd3.jpg",
+                "class": "repeat"
+            },
+            {
+                "asset": "../images/work/ringcentral/rcfwd2.jpg",
+                "class": "centered"
+            },    
+            {
+                "asset": "../images/work/ringcentral/rcfwd1.jpg",
+                "class": "repeat"
+            }                   
+        ]      
+    }    
+]

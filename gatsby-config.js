@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-json`,   
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -35,6 +36,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project-data`,
+        path: `${__dirname}/src/project-data`,
+      },
+    },    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
