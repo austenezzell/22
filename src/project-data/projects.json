@@ -10,15 +10,19 @@
         "assets": [
             {
                 "asset": "../images/work/ringcentral/rcfwd3.jpg",
-                "class": "repeat"
+                "class": "repeat",
+                "video": "/rc_balance_2.mp4"
+                
             },
             {
                 "asset": "../images/work/ringcentral/rcfwd2.jpg",
-                "class": "centered"
+                "class": "centered",
+                "video": ""
             },    
             {
                 "asset": "../images/work/ringcentral/rcfwd1.jpg",
-                "class": "repeat"
+                "class": "repeat",
+                "video": ""
             }                   
         ]  
     },
@@ -28,20 +32,23 @@
         "title": "RingCentral",
         "keyArt": "../images/work/ringcentral/rcfwd3.jpg",
         "keyArtVideo": "/rc_balance_2.mp4",
-        "keyArtAspectRatio": "portrait",
+        "keyArtAspectRatio": "landscape",
         "descriiption": "lorem ipsum from 2014 to 2019",
         "assets": [
             {
                 "asset": "../images/work/ringcentral/rcfwd3.jpg",
-                "class": "repeat"
+                "class": "repeat",
+                "video": ""
             },
             {
                 "asset": "../images/work/ringcentral/rcfwd2.jpg",
-                "class": "centered"
+                "class": "centered",
+                "video": ""
             },    
             {
                 "asset": "../images/work/ringcentral/rcfwd1.jpg",
-                "class": "repeat"
+                "class": "repeat",
+                "video": ""
             }                   
         ]      
     }    

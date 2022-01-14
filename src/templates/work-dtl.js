@@ -16,7 +16,7 @@ export default function workDtls({ data }) {
             <p> TEST </p>
             
             {assets.map((value, index) => {
-                return <div key={ index } className={ value.class }><Img fluid={value.asset.childrenImageSharp[0].fluid}/></div>
+                return <div key={ index } className={ value.class }>{ value.video ? <video autoPlay loop muted><source src={ value.video } type="video/mp4" /></video> : <Img fluid={value.asset.childrenImageSharp[0].fluid}/> }</div>
             })}
             
            
@@ -46,6 +46,7 @@ export const query = graphql`
             title
             assets {
               class
+              video
               asset {
                 childrenImageSharp {
                   fluid {

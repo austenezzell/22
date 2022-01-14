@@ -8,7 +8,7 @@ import Seo from "../../components/seo"
 export default function Work({ data }) {
     
     const page = 'archive-page';
-    const work = data.allMarkdownRemark.nodes;
+    const work = data.allProjectsJson.nodes;
 
     
     return (
@@ -21,14 +21,14 @@ export default function Work({ data }) {
                 
                 <div className="main-content ">
                     {work.map(project => (
-                        <Link to={"/work/" + project.frontmatter.slug} key={project.id} className="container work-grid" >
+                        <Link to={"/work/" + project.slug} key={project.id} className="container work-grid" >
                             <div className="image">
-                                { project.frontmatter.keyArtVideo ? <video autoPlay loop muted><source src={ project.frontmatter.keyArtVideo } type="video/mp4" /></video> : null }
-                                { !project.frontmatter.keyArtVideo ? <Img fluid={ project.frontmatter.keyArt.childImageSharp.fluid }/> : null }
+                                { project.keyArtVideo ? <video autoPlay loop muted><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
+                                { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
                             </div>
                             <div className="description">
-                                <h3>{ project.frontmatter.title }</h3>
-                                <p>{ project.frontmatter.date }</p>
+                                <h3>{ project.title }</h3>
+                                <p>{ project.date }</p>
                             </div>
                         </Link>
                     ))}
@@ -50,28 +50,47 @@ export default function Work({ data }) {
     )
 }
 
+// export const query = graphql`
+// query Work {
+//     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+//       nodes {
+//         frontmatter {
+//           date
+//           slug
+//           title
+//           keyArtVideo
+//           keyArtAspectRatio
+//           keyArt {
+//             childImageSharp {
+//               fluid {
+//                 ...GatsbyImageSharpFluid
+//               }
+//             }
+//           }
+//         }
+//         id
+//       }
+//     }
+//   }
+// `
+
 export const query = graphql`
-query Work {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+  query Wrok {
+    allProjectsJson(sort: {fields: date, order: DESC}) {
       nodes {
-        frontmatter {
-          date
-          slug
-          title
-          keyArtVideo
-          keyArtAspectRatio
-          keyArt {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+        id
+        keyArtVideo
+        keyArt {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
             }
           }
         }
-        id
+        keyArtAspectRatio
+        slug
+        title
       }
-    }
+    }    
   }
-  
-  
 `
