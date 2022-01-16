@@ -1,17 +1,18 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 import Footer from "../components/footer"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
+import Carousel from "../components/carousel"
+import MySketch from "../components/mysketch"
+
+
 
 
 const IndexPage = ({ data }) => {
   
-    const work = data.allProjectsJson.nodes;
     const page = 'homepage';
-    console.log(work);
-
+  
     return(
         <Layout page={ page }>
             <Seo title="Austen Ezzell — Creative Direction &amp; Design." />
@@ -20,35 +21,7 @@ const IndexPage = ({ data }) => {
                 <section>
                     <div className="container full-vh gallery-container grid-margins">
                         <h1 className="xl-type">Austen Ezzell (<Link to='/info'>Info</Link>) <br className="br-at-xl" /> Creative Direction <br /> &amp; Design </h1>
-
-                        
-                        {work.map(project => (
-                            <div key={project.id} className="container gallery twelve-col">
-                                <div className={"gallery-img " + project.keyArtAspectRatio}>
-                                    <Link to={"/work/" + project.slug} key={project.id} className="container work-grid" >
-                                        <div className="image">
-                                            { project.keyArtVideo ? <video autoPlay loop muted><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
-                                            { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
-                                        </div>
-                                        <div className="description">
-                                            <h3>{ project.title }</h3>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        ))}
-
-
-                        {/* <div className="container gallery twelve-col">
-                            <div className="gallery-img portrait">
-                                <img src="/ev.jpg" alt="" />
-                            </div>                        
-                        </div>
-                        <div className="container gallery twelve-col">
-                            <div className="gallery-img landscape">
-                                <img className="landscape" src="/wb.gif" alt="" />
-                            </div>                       
-                        </div>                     */}
+                        <Carousel />
                         <nav className="hp-navigation">
                             <ul>
                                 <li><Link to="/work" className="sm-type">Archive</Link></li>
@@ -69,7 +42,7 @@ const IndexPage = ({ data }) => {
                                     <h4 className="t-right sm-type journal-link"><Link to="/journal">Journal</Link></h4>
                                 </div>
                                 <div className="container twelve-col">
-                                    <div className="journal-content"></div>
+                                    <div className="journal-content" id='journalContent'><MySketch /></div>
                                 </div>
                                 <div className="container three-col description">
                                     <div className="col journal-entry sm-type">Name</div> 
@@ -93,23 +66,23 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const query = graphql`
-  query featuredWork {
-    allProjectsJson(sort: {fields: date, order: DESC}) {
-      nodes {
-        id
-        keyArtVideo
-        keyArt {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        keyArtAspectRatio
-        slug
-        title
-      }
-    }    
-  }
-`
+// export const query = graphql`
+//   query featuredWork {
+//     allProjectsJson(sort: {fields: date, order: DESC}) {
+//       nodes {
+//         id
+//         keyArtVideo
+//         keyArt {
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//         keyArtAspectRatio
+//         slug
+//         title
+//       }
+//     }    
+//   }
+// `

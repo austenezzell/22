@@ -26,7 +26,7 @@ $sm-type-max: unquote(($base-unit * 2) + 'px');
 $lg-type-min: unquote(($base-unit * 2) + 'px');
 $lg-type-max: unquote(($base-unit * 3) + 'px');
 $xl-type-min: unquote(($base-unit * 2) + 'px');
-$xl-type-max: unquote(($base-unit * 17) + 'px');
+$xl-type-max: unquote(($base-unit * 18) + 'px');
 
 // FLUID TYPE 
 .sm-type { 
@@ -41,6 +41,7 @@ $xl-type-max: unquote(($base-unit * 17) + 'px');
   font-size: clamp( $xl-type-min, $xl-scaler, $xl-type-max );
   line-height: 100%;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 // COLOR
@@ -296,7 +297,7 @@ vr {
     display: grid;
     .about-me {
       align-self: end;
-      margin-top: unquote(($base-unit * 4) + 'px');
+      margin-top: unquote(($base-unit * 8) + 'px');
     }
   }
   .info-gallery {
@@ -331,6 +332,7 @@ vr {
 }
 .gallery-container {
   position: relative;
+  overflow-x: hidden;
 }
 .gallery {
   position: absolute;
@@ -343,6 +345,18 @@ vr {
   height: 74vh;
   margin: 13vh 0;
   overflow: hidden;
+  opacity: 0;
+  left: 100%;
+  // display: none;
+  transform: scale(0.95);
+  transition: transform 1s;
+  &.active {
+    left: 0;
+    opacity: 1;
+    display: grid;
+    transform: scale(1)
+    
+  }  
   .gallery-img  {
     &.portrait {
       grid-column: 3 / 11;
@@ -444,3 +458,12 @@ vr {
   }
 
 }
+
+//WORK DETAIL PAGE
+.work-dtl-page {
+  background: black;
+  color: white;
+}
+
+
+// CAROUSEL

@@ -28,6 +28,7 @@ export default function Work({ data }) {
                             </div>
                             <div className="description">
                                 <h3>{ project.title }</h3>
+                                <h3>{ project.description }</h3>
                                 <p>{ project.date }</p>
                             </div>
                         </Link>
@@ -90,6 +91,7 @@ export const query = graphql`
         keyArtAspectRatio
         slug
         title
+        description
       }
     }    
   }

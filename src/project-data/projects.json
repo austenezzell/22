@@ -3,27 +3,81 @@
         "slug": "gogoro",
         "date": "2014—2018",
         "title": "Gogoro",
-        "keyArt": "../images/work/gogoro/gogoro_2.jpg",
+        "keyArt": "../images/work/gogoro/gogoro_0.jpg",
         "keyArtVideo": "",
         "keyArtAspectRatio": "portrait",
-        "descriiption": "lorem ipsum from 2014 to 2019",
+        "description": "lorem ipsum from 2014 to 2019",
         "assets": [
             {
-                "asset": "../images/work/ringcentral/rcfwd3.jpg",
+                "asset": "../images/work/gogoro/gogoro_0.jpg",
                 "class": "repeat",
-                "video": "/rc_balance_2.mp4"
-                
+                "video": ""
             },
             {
-                "asset": "../images/work/ringcentral/rcfwd2.jpg",
+                "asset": "",
+                "class": "repeat",
+                "video": "/gogoro_3.mp4"
+            },             
+            {
+                "asset": "../images/work/gogoro/gogoro_1.jpg",
                 "class": "centered",
                 "video": ""
             },    
             {
-                "asset": "../images/work/ringcentral/rcfwd1.jpg",
+                "asset": "../images/work/gogoro/gogoro_2.jpg",
+                "class": "centered",
+                "video": ""
+            },    
+            {
+                "asset": "../images/work/gogoro/gogoro_4.png",
+                "class": "centered",
+                "video": ""
+            },    
+            {
+                "asset": "../images/work/gogoro/gogoro_5.jpg",
                 "class": "repeat",
                 "video": ""
-            }                   
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_6.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_7.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_8.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_9.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_10.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_11.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_12.jpg",
+                "class": "repeat",
+                "video": ""
+            },  
+            {
+                "asset": "../images/work/gogoro/gogoro_13.jpg",
+                "class": "repeat",
+                "video": ""
+            }                                                              
         ]  
     },
     {
@@ -31,25 +85,299 @@
         "date": "2021",
         "title": "RingCentral",
         "keyArt": "../images/work/ringcentral/rcfwd3.jpg",
-        "keyArtVideo": "/rc_balance_2.mp4",
+        "keyArtVideo": "/rc_0.mp4",
         "keyArtAspectRatio": "landscape",
-        "descriiption": "lorem ipsum from 2014 to 2019",
+        "description": "lorem ipsum from 2014 to 2019",
         "assets": [
             {
-                "asset": "../images/work/ringcentral/rcfwd3.jpg",
+                "asset": "",
+                "class": "repeat",
+                "video": "/rc_0.mp4"
+            },
+            {
+                "asset": "",
+                "class": "centered",
+                "video": "/rc_1.mp4"
+            },    
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/rc_2.mp4"
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/rc_3.mp4"
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/rc_4.mp4"
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_5.jpg",
                 "class": "repeat",
                 "video": ""
             },
             {
-                "asset": "../images/work/ringcentral/rcfwd2.jpg",
-                "class": "centered",
-                "video": ""
-            },    
-            {
-                "asset": "../images/work/ringcentral/rcfwd1.jpg",
+                "asset": "../images/work/ringcentral/rc_6.jpg",
                 "class": "repeat",
                 "video": ""
-            }                   
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_7.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_8.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_9.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_10.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/ringcentral/rc_11.jpg",
+                "class": "repeat",
+                "video": ""
+            }                                                                                
+        ]      
+    },
+    {
+        "slug": "the-sacred-fig",
+        "date": "2021",
+        "title": "The Sacred Fig",
+        "keyArt": "../images/work/fig/fig_0.jpg",
+        "keyArtVideo": "",
+        "keyArtAspectRatio": "landscape",
+        "description": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "../images/work/fig/fig_0.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_1.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_2.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_3.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_4.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_5.jpg",
+                "class": "repeat",
+                "video": ""
+            },   
+            {
+                "asset": "../images/work/fig/fig_6.jpg",
+                "class": "repeat",
+                "video": ""
+            }, 
+            {
+                "asset": "../images/work/fig/fig_7.jpg",
+                "class": "repeat",
+                "video": ""
+            }                                                                                                                                 
+        ]      
+    },
+    {
+        "slug": "hank-pdx",
+        "date": "2019",
+        "title": "Hank PDX",
+        "keyArt": "",
+        "keyArtVideo": "/hank_0.mp4",
+        "keyArtAspectRatio": "landscape",
+        "description": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/hank_0.mp4"
+            },  
+            {
+                "asset": "../images/work/hank/hank_1.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "https://player.vimeo.com/external/365626808.hd.mp4?s=54344f281ab2ee21649e5a62d05f78ceee4dcee3&profile_id=175"
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "https://player.vimeo.com/external/365111331.hd.mp4?s=8824d0e9b078367a7c4d30ca9ebc594585b2f6cc&profile_id=174"
+            },
+            {
+                "asset": "../images/work/hank/hank_2.jpg",
+                "class": "repeat",
+                "video": ""
+            }                                                                                                                                    
+        ]      
+    },
+    
+    {
+        "slug": "the-james-brand",
+        "date": "2018",
+        "title": "The James Brand",
+        "keyArt": "../images/work/tjb/tjb_0.jpg",
+        "keyArtVideo": "",
+        "keyArtAspectRatio": "portrait",
+        "description": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "../images/work/tjb/tjb_0.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/tjb/tjb_1.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/tjb/tjb_2.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/tjb/tjb_3.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/tjb/tjb_4.jpg",
+                "class": "repeat",
+                "video": ""
+            }
+        ]      
+    },
+
+    {
+        "slug": "nextbit",
+        "date": "2016",
+        "title": "Nextbit",
+        "keyArt": "../images/work/nextbit/nextbit_0.jpg",
+        "keyArtVideo": "",
+        "keyArtAspectRatio": "portrait",
+        "description": "lorem ipsum from 2014 to 2019",
+        "assets": [
+            {
+                "asset": "../images/work/nextbit/nextbit_0.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/nextbit_1.mp4"
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_2.jpg",
+                "class": "repeat",
+                "video": ""
+            },       
+            {
+                "asset": "../images/work/nextbit/nextbit_3.jpg",
+                "class": "repeat",
+                "video": ""
+            },                 
+            {
+                "asset": "../images/work/nextbit/nextbit_4.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_5.png",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_6.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_7.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_8.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_9.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_10.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_11.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_12.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "",
+                "class": "repeat",
+                "video": "/nextbit_13.mp4"
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_14.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_15.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_16.jpg",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/nextbit/nextbit_17.jpg",
+                "class": "repeat",
+                "video": ""
+            }
         ]      
     }    
+    
+
+                    
 ]

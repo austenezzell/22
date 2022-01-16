@@ -12,13 +12,15 @@ class MySketch extends React.Component {
     Sketch = (p) => {
         let everett;
         let drawGrid;
+        let sketchWidth;
 
         p.preload = () => {
             everett = p.loadFont(Everett);
         };
         
         p.setup = () => {
-            p.createCanvas(600, 500);
+            sketchWidth = document.getElementById("journalContent").offsetWidth;
+            p.createCanvas(sketchWidth, 500);
             p.background('#b7a7cf');
             p.textFont(everett);
         };
