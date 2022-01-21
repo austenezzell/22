@@ -2,24 +2,56 @@ import { graphql, Link } from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
 import Img from "gatsby-image"
+import Footer from "../components/footer"
 
 export default function workDtls({ data }) {
-    const { date, description, title, assets } = data.projectsJson
+    const { description, title, assets } = data.projectsJson
     const page = 'work-dtl-page';
+    let asset;
+
+    let assetType = (value) => {
+        { value.video ? asset = <video autoPlay loop muted><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/> }
+        return asset;
+    }
+    
     return (
         <Layout page={ page }>
-            <header>
+            <header className='work-dtl-nav'>
                 <ul>
-                    <li><Link to="/">&larr; Austen Ezzell</Link></li>
-                    <li><Link to="/info">Info</Link></li>
-                </ul>
-                
+                    <li><Link to="/" className='sm-text'>&larr; Austen Ezzell</Link></li>
+                    <li><Link to="/info"  className='sm-text'>Info</Link></li>
+                </ul> 
             </header>
-            <h1>{ title }</h1>
-            <p>{ description } { date } </p>
-            {assets.map((value, index) => {
-                return <div key={ index } className={ value.class }>{ value.video ? <video autoPlay loop muted><source src={ value.video } type="video/mp4" /></video> : <Img fluid={value.asset.childrenImageSharp[0].fluid}/> }</div>
-            })}
+            <section>
+                <div className="work-content">
+                    {assets.map((value, index) => {
+                        return <div key={ index } className={ value.class + " asset"}>
+                            { value.class === "repeat" ? <div className='container'><div className='repeat-1'>{ assetType(value) }</div><div className='repeat-2'>{ assetType(value) }</div><div className='repeat-3'>{ assetType(value) }</div></div>
+                            : value.class === "centered" ? <div className='container twelve-col'><div className='centered-asset'>{ assetType(value) }</div></div>
+                            : assetType(value) }
+                            
+                            </div>
+                    })}
+                    <div className="info-bar">
+                        <h1>{ title } — { description }</h1>
+                    </div>
+                </div>
+            </section>
+            <div className="grid-margins container two-col info-dets">
+                <div className="box-1 container info-gallery three-col"></div>
+                <div>
+                    <div className="block double-m">
+                        <p className="sm-type">Feel free to reach out about collaborations</p>
+                    </div>
+                    <Footer />
+                </div>
+                
+            </div>
+            
+            
+            
+
+
         </Layout>
     )
 }
@@ -41,7 +73,6 @@ export const query = graphql`
             keyArtVideo
             keyArtAspectRatio
             description
-            date
             title
             assets {
               class

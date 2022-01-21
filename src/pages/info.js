@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
         <div className="info-main-content grid-margins">
           <h1 className="header xl-type">(<Link to="/">&larr;</Link>) AUSTEN EZZELL CREATIVE DIRECTION <br /> &amp; DESIGN</h1>
           <div className="about-me">
-            <p className="lg-type">I'm a creative director and designer based in Laguna Beach CA. I currently lead a global brand design team at Dialpad where I'm lucky to work with talented, driven, and friendly humans. I believe in the power of design thinking, diversity, data and collaboration. My focus at Dialpad is on building a design practice at scale and I'm happiest when uncomfortable design decisions are reinforced by user data.</p>
+            <p className="lg-type">I'm a creative director and designer based in Laguna Beach CA. I currently lead global brand design at Dialpad where I'm lucky to work with talented, driven, and friendly humans. I believe in the power of design thinking, diversity, data and collaboration. My focus at Dialpad is on building a design practice at scale and I'm happiest when uncomfortable design decisions are reinforced by user data.</p>
           </div>
         </div>
         <div className="grid-margins container two-col info-dets">

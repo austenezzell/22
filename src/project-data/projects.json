@@ -10,7 +10,7 @@
         "assets": [
             {
                 "asset": "../images/work/gogoro/gogoro_0.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
@@ -25,17 +25,17 @@
             },    
             {
                 "asset": "../images/work/gogoro/gogoro_2.jpg",
-                "class": "centered",
+                "class": "repeat",
                 "video": ""
             },    
             {
                 "asset": "../images/work/gogoro/gogoro_4.png",
-                "class": "centered",
+                "class": "full",
                 "video": ""
             },    
             {
                 "asset": "../images/work/gogoro/gogoro_5.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },  
             {
@@ -45,32 +45,32 @@
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_7.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_8.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_9.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_10.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_11.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },  
             {
                 "asset": "../images/work/gogoro/gogoro_12.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },  
             {
@@ -106,22 +106,22 @@
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "centered",
                 "video": "/rc_3.mp4"
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "full",
                 "video": "/rc_4.mp4"
             },
             {
                 "asset": "../images/work/ringcentral/rc_5.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
                 "asset": "../images/work/ringcentral/rc_6.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
@@ -131,17 +131,17 @@
             },
             {
                 "asset": "../images/work/ringcentral/rc_8.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
                 "asset": "../images/work/ringcentral/rc_9.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
                 "asset": "../images/work/ringcentral/rc_10.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
@@ -167,7 +167,7 @@
             },   
             {
                 "asset": "../images/work/fig/fig_1.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },   
             {
@@ -177,7 +177,7 @@
             },   
             {
                 "asset": "../images/work/fig/fig_3.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },   
             {
@@ -187,12 +187,12 @@
             },   
             {
                 "asset": "../images/work/fig/fig_5.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },   
             {
                 "asset": "../images/work/fig/fig_6.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             }, 
             {
@@ -213,7 +213,7 @@
         "assets": [
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "centered",
                 "video": "/hank_0.mp4"
             },  
             {
@@ -223,12 +223,12 @@
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "full",
                 "video": "https://player.vimeo.com/external/365626808.hd.mp4?s=54344f281ab2ee21649e5a62d05f78ceee4dcee3&profile_id=175"
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "centered",
                 "video": "https://player.vimeo.com/external/365111331.hd.mp4?s=8824d0e9b078367a7c4d30ca9ebc594585b2f6cc&profile_id=174"
             },
             {
@@ -255,12 +255,12 @@
             },
             {
                 "asset": "../images/work/tjb/tjb_1.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
                 "asset": "../images/work/tjb/tjb_2.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
@@ -292,22 +292,22 @@
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "full",
                 "video": "/nextbit_1.mp4"
             },
             {
                 "asset": "../images/work/nextbit/nextbit_2.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },       
             {
                 "asset": "../images/work/nextbit/nextbit_3.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },                 
             {
                 "asset": "../images/work/nextbit/nextbit_4.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
@@ -317,7 +317,7 @@
             },
             {
                 "asset": "../images/work/nextbit/nextbit_6.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
@@ -327,22 +327,22 @@
             },
             {
                 "asset": "../images/work/nextbit/nextbit_8.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
                 "asset": "../images/work/nextbit/nextbit_9.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
                 "asset": "../images/work/nextbit/nextbit_10.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {
                 "asset": "../images/work/nextbit/nextbit_11.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
@@ -352,12 +352,12 @@
             },
             {
                 "asset": "",
-                "class": "repeat",
+                "class": "centered",
                 "video": "/nextbit_13.mp4"
             },
             {
                 "asset": "../images/work/nextbit/nextbit_14.jpg",
-                "class": "repeat",
+                "class": "full",
                 "video": ""
             },
             {
@@ -367,7 +367,7 @@
             },
             {
                 "asset": "../images/work/nextbit/nextbit_16.jpg",
-                "class": "repeat",
+                "class": "centered",
                 "video": ""
             },
             {

@@ -9,6 +9,7 @@ import MySketch from "../components/mysketch"
 
 
 
+
 const IndexPage = ({ data }) => {
   
     const page = 'homepage';

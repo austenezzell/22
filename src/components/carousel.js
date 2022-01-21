@@ -1,9 +1,29 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
+
 const Carousel = () => {
     
+    const useMousePosition = () => {
+        const [position, setPosition] = useState({ x: 0, y: 0 });
+      
+        useEffect(() => {
+          const setFromEvent = (e) => setPosition({ x: e.clientX, y: e.clientY });
+          window.addEventListener("mousemove", setFromEvent);
+      
+          return () => {
+            window.removeEventListener("mousemove", setFromEvent);
+          };
+        }, []);
+      
+        return position;
+    };
+    const position = useMousePosition();
+
+
+
+
     const data = useStaticQuery(graphql`
         query carouselQuery {
             allProjectsJson(sort: {fields: date, order: DESC}) {
@@ -50,12 +70,13 @@ const Carousel = () => {
         return () => {
         resetTimeout();
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [index]);
-
-    console.log(index);
+    
 
     return (
         <div className="featured-work-container">
+            
             {work.map((project, count) => (
                 <div key={project.id} className={ index === count ? "active container gallery twelve-col" : " container gallery twelve-col" }>
                     <div className={"gallery-img " + project.keyArtAspectRatio }>
@@ -68,9 +89,10 @@ const Carousel = () => {
                                 { project.keyArtVideo ? <video autoPlay loop muted ><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
                                 { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
                             </div>
-                            <div className="description">
-                                <h3>{ project.title }</h3>
+                            <div className="description" style={{ left: position.x + 30, top: position.y - 130 }}>
+                                <h3 className="sm-type">{ project.title }</h3>
                             </div>
+                            
                         </Link>
                     </div>
                 </div>
