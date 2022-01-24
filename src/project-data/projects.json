@@ -1,12 +1,26 @@
 [
     {
         "slug": "gogoro",
-        "date": "2014—2018",
+        "date": "2018",
         "title": "Gogoro",
         "keyArt": "../images/work/gogoro/gogoro_0.jpg",
         "keyArtVideo": "",
-        "keyArtAspectRatio": "portrait",
-        "description": "lorem ipsum from 2014 to 2019",
+        "keyArtAspectRatio": "square",
+        "description": "Gogoro has changed the world by rethinking how energy is consumed. At Cinco Design, I had the opportunity to help shape their brand architecture, platforms, messaging, consumer experience, websites, apps and go-to-market strategies.",
+        "team": [
+            {
+                "person": "Many of the good people at Cinco Design (past and present).",
+                "link": "https//www.cincodesign.com"
+            },
+            {
+                "person": "Not Real",
+                "link": "https://notreal.tv/"
+            },
+            {
+                "person": "The Gogoro Team",
+                "link": "https://gogoro.com"
+            }            
+        ],
         "assets": [
             {
                 "asset": "../images/work/gogoro/gogoro_0.jpg",
@@ -87,7 +101,61 @@
         "keyArt": "../images/work/ringcentral/rcfwd3.jpg",
         "keyArtVideo": "/rc_0.mp4",
         "keyArtAspectRatio": "landscape",
-        "description": "lorem ipsum from 2014 to 2019",
+        "description": "The challenge; build a brand from the ground up for a 35 billion dollar company during a global pandemic. I worked with the brand marketing team at RC to define systems, processes, guidelines, and tools to help establish and grow the brand. During this time we launched a sub brand—Glip—and made huge steps toward connecting with our audience in new and more modern ways.",
+        "team": [
+            {
+                "person": "JP Walti",
+                "link": "https://www.linkedin.com/in/johnpaulwalti/"
+            },
+            {
+                "person": "Morgan Norman",
+                "link": "https://twitter.com/meetmorg?lang=en"
+            },
+            {
+                "person": "Yansu Ouyang",
+                "link": "https://www.linkedin.com/in/yansuouyang/"
+            },            
+            {
+                "person": "Kristin Hurley",
+                "link": "http://kristinhurley.com/"
+            },                        
+            {
+                "person": "Astra Sodarsono",
+                "link": "https://www.astra-logic.com/"
+            },                        
+            {
+                "person": "Brendan Miller",
+                "link": "http://brendanmiller.xyz/"
+            },                                    
+            {
+                "person": "Maria Janosko",
+                "link": "http://kristinhurley.com/"
+            },         
+            {
+                "person": "Earl Little",
+                "link": "https://www.linkedin.com/in/earl-little-6866aba0/"
+            }, 
+            {
+                "person": "Kat Chen",
+                "link": "https://www.linkedin.com/in/katherinegracechen/"
+            },  
+            {
+                "person": "Cinco Design",
+                "link": "https://cincodesign.com/"
+            }, 
+            {
+                "person": "Not Real",
+                "link": "https://notreal.tv/"
+            },                              
+            {
+                "person": "Colophon Foundry",
+                "link": "https://www.colophon-foundry.org/"
+            },                                                
+            {
+                "person": "Code & Theory",
+                "link": "https://www.codeandtheory.com/"
+            }                                      
+        ],
         "assets": [
             {
                 "asset": "",
@@ -153,12 +221,22 @@
     },
     {
         "slug": "the-sacred-fig",
-        "date": "2021",
+        "date": "2022",
         "title": "The Sacred Fig",
         "keyArt": "../images/work/fig/fig_0.jpg",
         "keyArtVideo": "",
         "keyArtAspectRatio": "landscape",
-        "description": "lorem ipsum from 2014 to 2019",
+        "description": "The Sacred Fig was established to transform lives. Fast forward seven years to a seemingly different world, and we continue to build on this same promise. In August of 2021 we re-launched The Fig with an updated platform, new identity, a new product—Fig Flix—and an optimized end-to-end customer experience including a completely new website.",
+        "team": [
+            {
+                "person": "Lauren Ezzell",
+                "link": "http:www.laurenezzell.com"
+            },
+            {
+                "person": "The Sacred Fig team",
+                "link": "https://www.thesacredfig.com/"
+            }
+        ],
         "assets": [
             {
                 "asset": "../images/work/fig/fig_0.jpg",
@@ -209,7 +287,33 @@
         "keyArt": "",
         "keyArtVideo": "/hank_0.mp4",
         "keyArtAspectRatio": "landscape",
-        "description": "lorem ipsum from 2014 to 2019",
+        "description": "We partnered with the Portland Art Museum to promote Hank Willis Thomas’ upcoming exhibition All Things Being Equal.",
+        "team": [
+            {
+                "person": "Kevan Wolahan",
+                "link": "http://wolahan.com/"
+            },
+            {
+                "person": "Erich Quist",
+                "link": "https://www.erichquist.com/"
+            },
+            {
+                "person": "Kamilah Dove",
+                "link": "http://www.kamilahdove.com/"
+            },
+            {
+                "person": "Hank Willis Thomas",
+                "link": "https://www.hankwillisthomas.com/"
+            },
+            {
+                "person": "The Portland Art Museum",
+                "link": "https://portlandartmuseum.org/"
+            },
+            {
+                "person": "The good people at Cinco",
+                "link": "https://cincodesign.com"
+            }
+        ],
         "assets": [
             {
                 "asset": "",
@@ -246,7 +350,29 @@
         "keyArt": "../images/work/tjb/tjb_0.jpg",
         "keyArtVideo": "",
         "keyArtAspectRatio": "portrait",
-        "description": "lorem ipsum from 2014 to 2019",
+        "description": "The James Brand started with a clear understanding of their target-audience. Cinco then shaped brand and products to seamlessly fit into their lives. We built a digital shopping experience that serves as a platform for users to go deep into stories, product benefits and comparisons while always allowing for a seamless path to purchase.",
+        "team": [
+            {
+                "person": "Zach Allott",
+                "link": "https://www.zacharyallott.com/"
+            },
+            {
+                "person": "Cabe Branson",
+                "link": "http://austenezzell.com/cabe.io"
+            },
+            {
+                "person": "Steve Ebert",
+                "link": "http://thisisusefulinformation.com/"
+            },
+            {
+                "person": "The James Brand Team",
+                "link": "https://thejamesbrand.com"
+            },
+            {
+                "person": "The good people at Cinco",
+                "link": "https://cincodesign.com"
+            }
+        ],
         "assets": [
             {
                 "asset": "../images/work/tjb/tjb_0.jpg",
@@ -278,12 +404,38 @@
 
     {
         "slug": "nextbit",
-        "date": "2016",
+        "date": "2015",
         "title": "Nextbit",
         "keyArt": "../images/work/nextbit/nextbit_0.jpg",
         "keyArtVideo": "",
         "keyArtAspectRatio": "portrait",
-        "description": "lorem ipsum from 2014 to 2019",
+        "description": "Nextbit introduced the world's first cloud-based operating system. Cinco helped introduce Nextbit to the world. We designed and built a digital shopping experience that taught users about the benefits of a cloud-based operating system while providing a seamless shopping flow.",
+        "team": [
+            {
+                "person": "Kirk James",
+                "link": "https://cincodesign.com"
+            },
+            {
+                "person": "Aaron Poe",
+                "link": "https://aaronpoeandco.com/"
+            },
+            {
+                "person": "Shawn Peterson",
+                "link": "http://www.shawn-petersen.com/"
+            },
+            {
+                "person": "Christina Rosalie",
+                "link": "http://christinarosalie.com/"
+            },
+            {
+                "person": "Zach Allott",
+                "link": "https://www.zacharyallott.com/"
+            },
+            {
+                "person": "The good people at Cinco",
+                "link": "https://cincodesign.com"
+            }
+        ],
         "assets": [
             {
                 "asset": "../images/work/nextbit/nextbit_0.jpg",

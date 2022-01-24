@@ -5,24 +5,28 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Carousel from "../components/carousel"
 import MySketch from "../components/mysketch"
-
-
-
+import useMouse from '@react-hook/mouse-position'
 
 
 const IndexPage = ({ data }) => {
   
     const page = 'homepage';
-  
+
+    const ref = React.useRef(null)
+    const mouse = useMouse(ref, {
+      enterDelay: 100,
+      leaveDelay: 100,
+    })
+    
     return(
         <Layout page={ page }>
             <Seo title="Austen Ezzell — Creative Direction &amp; Design." />
     
             <div>
                 <section>
-                    <div className="container full-vh gallery-container grid-margins">
+                    <div ref={ref}  className="container full-vh gallery-container grid-margins">
                         <h1 className="xl-type">Austen Ezzell (<Link to='/info'>Info</Link>) <br className="br-at-xl" /> Creative Direction <br /> &amp; Design </h1>
-                        <Carousel />
+                        <Carousel mouseX = {mouse.x} mouseY = {mouse.y} />
                         <nav className="hp-navigation">
                             <ul>
                                 <li><Link to="/work" className="sm-type">Archive</Link></li>

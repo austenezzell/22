@@ -10,30 +10,36 @@ export default function Work({ data }) {
     const page = 'archive-page';
     const work = data.allProjectsJson.nodes;
 
-    
     return (
         
         <Layout page={ page }>
             <Seo title="Work Archive" />
-            
             <div className="grid-margins">
                 <h1 className="header xl-type">(<Link to="/">&larr;</Link>) Work Archive</h1>
                 
-                <div className="main-content ">
-                    {work.map(project => (
-                        <Link to={"/work/" + project.slug} key={project.id} className="container work-grid" >
-                            <div className="image">
-                                { project.keyArtVideo ? <video autoPlay loop muted><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
-                                { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
+                <div className="main-content">
+                  <ul className="work-list" >
+                    {work.map((project, index) => {
+                      return <li key={index}>
+                        <Link to={"/work/" + project.slug}>
+                          <div className="text">
+                            <h3>{ project.title }</h3>
+                            <p>{ project.date }</p>
+                          </div>
+                          
+                          <div className="key-art container">
+                            <div className={ project.keyArtAspectRatio }>
+                              { project.keyArtVideo ? <video autoPlay loop muted><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
+                              { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }  
                             </div>
-                            <div className="description">
-                                <h3>{ project.title }</h3>
-                                <h3>{ project.description }</h3>
-                                <p>{ project.date }</p>
-                            </div>
+                          </div>
                         </Link>
-                    ))}
+                      </li>
+                    })}
+                    
+                  </ul>
                 </div>
+
                 <div className="container two-col">
                     <div></div>
                     <div>
@@ -50,30 +56,6 @@ export default function Work({ data }) {
         
     )
 }
-
-// export const query = graphql`
-// query Work {
-//     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-//       nodes {
-//         frontmatter {
-//           date
-//           slug
-//           title
-//           keyArtVideo
-//           keyArtAspectRatio
-//           keyArt {
-//             childImageSharp {
-//               fluid {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
-//         }
-//         id
-//       }
-//     }
-//   }
-// `
 
 export const query = graphql`
   query Wrok {
@@ -92,6 +74,7 @@ export const query = graphql`
         slug
         title
         description
+        date
       }
     }    
   }

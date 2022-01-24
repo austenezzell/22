@@ -5,12 +5,22 @@ import Img from "gatsby-image"
 import Footer from "../components/footer"
 
 export default function workDtls({ data }) {
-    const { description, title, assets } = data.projectsJson
+    const { description, title, assets, slug, team } = data.projectsJson
+    const projects = data.allProjectsJson.edges
     const page = 'work-dtl-page';
     let asset;
+    let allProjects = [];
+
+    
+    projects.forEach((project, index) => {
+        project.next ? allProjects.push(project.next.slug) : allProjects.push('end');
+    });
+
+    let currentPageIndex = allProjects.indexOf(slug);
+    let nextPage = allProjects[currentPageIndex + 1];
 
     let assetType = (value) => {
-        { value.video ? asset = <video autoPlay loop muted><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/> }
+        value.video ? asset = <video autoPlay loop muted><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/>
         return asset;
     }
     
@@ -19,6 +29,7 @@ export default function workDtls({ data }) {
             <header className='work-dtl-nav'>
                 <ul>
                     <li><Link to="/" className='sm-text'>&larr; Austen Ezzell</Link></li>
+                    <li><Link to="/work" className='sm-text'>Archive</Link></li>
                     <li><Link to="/info"  className='sm-text'>Info</Link></li>
                 </ul> 
             </header>
@@ -29,17 +40,34 @@ export default function workDtls({ data }) {
                             { value.class === "repeat" ? <div className='container'><div className='repeat-1'>{ assetType(value) }</div><div className='repeat-2'>{ assetType(value) }</div><div className='repeat-3'>{ assetType(value) }</div></div>
                             : value.class === "centered" ? <div className='container twelve-col'><div className='centered-asset'>{ assetType(value) }</div></div>
                             : assetType(value) }
-                            
                             </div>
                     })}
                     <div className="info-bar">
-                        <h1>{ title } — { description }</h1>
+                        <div className="container two-col">
+                            <div className="box-1">
+                                <h1>{ title }</h1>
+                            </div>
+                            <div className="box-2">
+                            { nextPage === "end" ? <Link to={ '/work/' + allProjects[0] }>Next Project &rarr;</Link> : <Link to={ '/work/' + nextPage }>Next Project &rarr;</Link> }
+                            </div>
+                        </div>                              
                     </div>
                 </div>
             </section>
             <div className="grid-margins container two-col info-dets">
                 <div className="box-1 container info-gallery three-col"></div>
                 <div>
+                    <div className="description mb-4">
+                        <p className="sm-type">{ description }</p>
+                    </div>
+                    <div className='team'>
+                        <h3>Team</h3>
+                        <ul>
+                            { team.map((ic, index) => {
+                                return <li key={ index }>{ ic.link ? <a href={ ic.link }>{ ic.person }</a> : ic.person }</li>
+                            })}                        
+                        </ul>
+                    </div>
                     <div className="block double-m">
                         <p className="sm-type">Feel free to reach out about collaborations</p>
                     </div>
@@ -47,25 +75,10 @@ export default function workDtls({ data }) {
                 </div>
                 
             </div>
-            
-            
-            
-
-
         </Layout>
     )
 }
 
-// export const query = graphql`
-//     query WorkDtlPage($slug: String) {
-//         markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-//             html
-//             frontmatter {
-//                 title
-//             }
-//         }
-//     }
-// `
 
 export const query = graphql`
     query WorkDtlPage($slug: String) {       
@@ -74,6 +87,11 @@ export const query = graphql`
             keyArtAspectRatio
             description
             title
+            slug
+            team {
+                link
+                person
+            }
             assets {
               class
               video
@@ -85,6 +103,13 @@ export const query = graphql`
                 }
               }
             }        
+        }
+        allProjectsJson(sort: {fields: date, order: DESC}) {
+            edges {
+                next {
+                    slug
+                }
+            }
         }
     }
 `
