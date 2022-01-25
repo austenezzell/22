@@ -21,10 +21,9 @@ const IndexPage = ({ data }) => {
     return(
         <Layout page={ page }>
             <Seo title="Austen Ezzell — Creative Direction &amp; Design." />
-    
-            <div>
+            <div ref={ref}>
                 <section>
-                    <div ref={ref}  className="container full-vh gallery-container grid-margins">
+                    <div className="container full-vh gallery-container grid-margins">
                         <h1 className="xl-type">Austen Ezzell (<Link to='/info'>Info</Link>) <br className="br-at-xl" /> Creative Direction <br /> &amp; Design </h1>
                         <Carousel mouseX = {mouse.x} mouseY = {mouse.y} />
                         <nav className="hp-navigation">
@@ -41,20 +40,13 @@ const IndexPage = ({ data }) => {
     
                 <section>
                     <div className="hp-bottom container two-col grid-margin-bottom">
-                        <div className="col hp-box-1">
-                            <div className="journal container">
-                                <div className="three-col">
-                                    <h4 className="t-right sm-type journal-link"><Link to="/journal">Journal</Link></h4>
-                                </div>
-                                <div className="container twelve-col">
-                                    <div className="journal-content" id='journalContent'><MySketch /></div>
-                                </div>
-                                <div className="container three-col description">
-                                    <div className="col journal-entry sm-type">Name</div> 
-                                    <div className="col journal-entry t-center sm-type">Name</div> 
-                                    <div className="col journal-entry t-right sm-type">Name</div> 
-                                </div>
+                        <div className="col hp-box-1 container">
+                            
+                            <div className="journal-content" id='journalContent'>
+                                <MySketch />
                             </div>
+                                
+                            
                             <div className="m-l-r sm-screen-only p-top">
                                 <hr />
                             </div>

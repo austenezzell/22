@@ -11,37 +11,27 @@ class MySketch extends React.Component {
     
     Sketch = (p) => {
         let everett;
-        let drawGrid;
-        let sketchWidth;
+        
 
         p.preload = () => {
             everett = p.loadFont(Everett);
         };
         
         p.setup = () => {
-            sketchWidth = document.getElementById("journalContent").offsetWidth;
-            p.createCanvas(sketchWidth, 500);
-            p.background('#b7a7cf');
+            p.createCanvas(300, 300, p.WEBGL);
             p.textFont(everett);
+            p.textSize(p.width / 10);
+            p.textAlign(p.CENTER, p.CENTER);
         };
 
         p.draw = () => {
-            drawGrid();
-            p.circle(250, 250, 100);
-            p.circle(300, 300, 100);
+            p.background('#F0F0F0');
+            let time = p.millis();
+            p.rotateX(time / 1000);
+            p.rotateZ(time / 1234);
+            p.fill('black')
+            p.text('Unity in diversity', 0, 0);
         };
-
-        drawGrid = () => {
-            p.textSize(10);
-            for (var i = 0; i < 25; i++) {
-                for (var j = 0; j < 10; j++) {
-                    p.line(i * 50, 0, i * 50, 500);
-                    p.text(i * 50, (i * 50) + 2, 10);
-                    p.line(0, j * 50, 600, j * 50);
-                    p.text(j * 50, 2, (j * 50) + 10);
-                }
-            }
-        }
 
     };
 

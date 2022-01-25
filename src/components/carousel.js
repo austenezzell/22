@@ -29,7 +29,7 @@ const Carousel = (props) => {
     const work = data.allProjectsJson.nodes;
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
-    const [delay, setDelay] = React.useState(8000);
+    const [delay, setDelay] = React.useState(7000);
 
     function resetTimeout() {
         if (timeoutRef.current) {

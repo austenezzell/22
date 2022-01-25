@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="block">
               <h4 className="sm-type">Technology</h4>
-              <p className="sm-type">This site is built on the Jamstack with Gatsby. Most of the sketches in the journal are done with P5.js.</p>
+              <p className="sm-type">This site is built on the Jamstack with Gatsby. Most of the sketches are done with P5.js.</p>
             </div>
             <div className="block">
               <h4 className="sm-type">Portfolios past</h4>

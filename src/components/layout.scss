@@ -473,19 +473,19 @@ vr {
 .hp-box-2 {
   align-self: end;
 }
-.journal {
+
+.journal-content {
   padding: 0 unquote(($base-unit * 2) + 'px');
-  height: 100%;
-  .journal-content {
-    align-self: center;
-    height: 100%;
-    grid-column: 3 / 11;
-    background: $purple;
-  }
-  .description {
-    align-self: end;
+  align-self: center;
+  canvas {
+    width: 100%!important;
+    height: 100%!important;
   }
 }
+.description {
+  align-self: end;
+}
+
 .footer-container {
   padding: 0 unquote(($base-unit * 2) + 'px');
 }
@@ -495,7 +495,7 @@ vr {
 .archive-page {
   background: $tan;
   .main-content {
-    margin-top: unquote(($base-unit * 8) + 'px');
+    margin-top: unquote(($base-unit * 12) + 'px');
   }
   .work-list {
 

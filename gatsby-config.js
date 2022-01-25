@@ -49,14 +49,7 @@ module.exports = {
         name: `work`,
         path: `${__dirname}/src/work`,
       },      
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `journal`,
-        path: `${__dirname}/src/journal`,
-      },      
-    },    
+    },   
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -70,7 +63,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
