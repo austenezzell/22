@@ -29,7 +29,7 @@ const Carousel = (props) => {
     const work = data.allProjectsJson.nodes;
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
-    const [delay, setDelay] = React.useState(7000);
+    const [delay, setDelay] = React.useState(6000);
 
     function resetTimeout() {
         if (timeoutRef.current) {
@@ -54,7 +54,7 @@ const Carousel = (props) => {
     }, [index]);
 
     return (
-        <div className="featured-work-container">       
+        <div className="">       
             {work.map((project, count) => (
                 <div key={project.id} className={ index === count ? "active container gallery twelve-col" : " container gallery twelve-col" }>
                     <div className={"gallery-img " + project.keyArtAspectRatio }>
@@ -63,7 +63,7 @@ const Carousel = (props) => {
                             key={count}
                             className="container work-grid"
                             >
-                            <div className="image">
+                            <div className="image loadin">
                                 { project.keyArtVideo ? <video autoPlay loop muted webkit-playsinline playsinline ><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
                                 { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
                             </div>

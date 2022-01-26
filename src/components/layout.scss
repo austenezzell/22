@@ -191,6 +191,12 @@ vr {
 .eighty-vh {
   min-height: 80vh;
 }
+.hp-hero-vh {
+  min-height: 90vh;
+  @include md-screens {  
+    min-height: 100vh;
+  }
+}
 
 .br-at-xl {
   display: none;
@@ -229,10 +235,13 @@ vr {
   grid-template-columns: repeat(1,1fr);
 }
 .two-col {
-  grid-template-columns: repeat(2,1fr);
-  @include sm-screens {    
-    grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1,1fr);
+  @include md-screens {    
+    grid-template-columns: repeat(2,1fr);
   }
+}
+.mobile-two-col {
+  grid-template-columns: repeat(2,1fr);
 }
 
 .three-col {
@@ -344,7 +353,10 @@ vr {
       }
     }
     .box-2 {
-      padding-left: unquote(($base-unit * 2) + 'px');
+      
+      @include md-screens(){
+        padding-left: unquote(($base-unit * 2) + 'px');
+      }
     }    
   }
 }
@@ -356,7 +368,7 @@ vr {
     align-self: end;
   }
 }
-.featured-work-container {
+.loadin {
   opacity: 0;
   animation-delay: 3s;
   animation-duration: .4s;
@@ -367,9 +379,11 @@ vr {
 @keyframes loadin {
   from {
     opacity: 0;
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -385,13 +399,16 @@ vr {
   justify-content: center;
   align-content: center;
   width: 100%;
-  height: 74vh;
+  height: 69vh;
   margin: 13vh 0;
   overflow: hidden;
   opacity: 0;
   left: 100%;
   transform: scale(0.95);
   transition: transform 1s;
+  @include md-screens(){
+    height: 74vh;
+  }
   &.active {
     left: 0;
     opacity: 1;

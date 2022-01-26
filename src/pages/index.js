@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
             <Seo title="Austen Ezzell — Creative Direction &amp; Design." />
             <div ref={ref}>
                 <section>
-                    <div className="container full-vh gallery-container grid-margins">
+                    <div className="container hp-hero-vh gallery-container grid-margins">
                         <h1 className="xl-type">Austen Ezzell (<Link to='/info'>Info</Link>) <br className="br-at-xl" /> Creative Direction <br /> &amp; Design </h1>
                         <Carousel mouseX = {mouse.x} mouseY = {mouse.y} />
                         <nav className="hp-navigation">

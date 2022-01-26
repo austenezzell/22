@@ -43,7 +43,7 @@ export default function workDtls({ data }) {
                             </div>
                     })}
                     <div className="info-bar">
-                        <div className="container two-col">
+                        <div className="container mobile-two-col">
                             <div className="box-1">
                                 <h1>{ title }</h1>
                             </div>
