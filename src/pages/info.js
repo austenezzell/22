@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="block">              
               <h4 className="sm-type">Design</h4>
-              <p className="sm-type">This site is always in beta. I make it an annual ritual to re-design, lern new technologies and push myself in new directions. I'm a big fan of figma and designing in the browser. The font is Everett (not named after my son but partially selected for this reason) by Nolan Paparelli.</p>
+              <p className="sm-type">This site is always in beta. I make it an annual ritual to re-design, learn new technologies and push myself in new directions. I'm a big fan of figma and designing in the browser. The font is Everett (not named after my son but partially selected for this reason) by Nolan Paparelli.</p>
             </div>
             <div className="block">
               <h4 className="sm-type">Technology</h4>
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="block">
               <h4 className="sm-type">Portfolios past</h4>
-              <p className="sm-type">2020, 2018, 2017, 2016, 2015, 2014, 2013 (older versions lost).</p>
+              <p className="sm-type"><a href="http://2020.austenezzell.com/">2020</a>, <a href="http://2018.austenezzell.com/">2018</a>, <a href="http://2017.austenezzell.com/">2017</a>, <a href="http://2016.austenezzell.com/">2016</a>, <a href="http://2015.austenezzell.com/">2015</a>, <a href="http://2014.austenezzell.com/">2014</a>, <a href="http://2013.austenezzell.com/">2013</a>. Older versions lost.</p>
             </div>
             <div className="block double-m">
               <p className="sm-type">Feel free to reach out about collaborations</p>

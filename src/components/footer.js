@@ -9,7 +9,7 @@ const footer = () => {
         <footer className='footer'>
             <div className='container-two sm-type '>
                 <ul>
-                    <li><a className='sm-type' href="mailto:austenezzell.com">Email</a></li>
+                    <li><a className='sm-type' href="mailto:austenezzell@gmail.com">Email</a></li>
                     <li><a className='sm-type' href="https://www.are.na/austen-ezzell">Are.na</a></li>
                     <li><a className='sm-type' href="https://www.linkedin.com/in/austenezzell/">LinkedIn</a></li>
                     <li><a className='sm-type' href="https://www.instagram.com/a.ezzy/">Instagram</a></li>

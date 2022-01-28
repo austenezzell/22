@@ -20,7 +20,7 @@ export default function workDtls({ data }) {
     let nextPage = allProjects[currentPageIndex + 1];
 
     let assetType = (value) => {
-        value.video ? asset = <video autoPlay loop muted webkit-playsinline playsinline><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/>
+        value.video ? asset = <video autoplay="autoplay" muted="true" playsInline loop  ><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/>
         return asset;
     }
     
