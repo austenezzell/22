@@ -29,8 +29,8 @@ export default function Work({ data }) {
                           
                           <div className="key-art container">
                             <div className={ project.keyArtAspectRatio }>
-                              { project.keyArtVideo ? <video autoplay="autoplay" muted="true" playsInline loop><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
-                              { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }  
+                              { project.keyArtVideo ? <video autoPlay muted playsInline loop><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
+                              { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
                             </div>
                           </div>
                         </Link>

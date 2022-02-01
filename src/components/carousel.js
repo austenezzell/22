@@ -64,11 +64,11 @@ const Carousel = (props) => {
                             className="container work-grid"
                             >
                             <div className="image loadin">
-                                { project.keyArtVideo ? <video autoplay="autoplay" muted="true" playsInline loop><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
+                                { project.keyArtVideo ? <video autoPlay muted playsInline loop><source src={ project.keyArtVideo } type="video/mp4" /></video> : null }
                                 { !project.keyArtVideo ? <Img fluid={ project.keyArt.childImageSharp.fluid }/> : null }
                             </div>
                             <div className="description" style={{ left: mouseX + 24, top: mouseY - 140 }}>
-                                <h3 className="sm-type">{ project.title } <span className="arrow"><Arrow /></span> </h3>
+                                <h3 className="sm-type loadin">{ project.title } <span className="arrow"><Arrow /></span> </h3>
                             </div>
                         </Link>
                     </div>

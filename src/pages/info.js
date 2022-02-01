@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
   
   return(
     <Layout page={page}>
-      <Seo title="Austen Ezzell — Information" />
+      <Seo title="Info" />
       
       <div>
         <div className="info-main-content grid-margins">
@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
           <div className="box-2">
             <div className="block">
               <h4 className="sm-type">Personal</h4>
-              <p className="sm-type">Design found me. I set out to become an artist or an athelete and eventually realized that the design process was the magic that helped me connect the things I love. I have a degree in Marketing & Art History. I’m a self taught front-end developer and I'm obsessed with the possibilities of design + technology. I live with my wife, two boys and Newfoundland in Laguan Beach CA. Hit me up for a coffee if your in the neighborhood.</p>              
+              <p className="sm-type">Design found me. I set out to become an artist or an athelete and eventually realized that the design process was the magic that helped me connect the things I love. I have a degree in Marketing & Art History. I’m a self taught front-end developer and I'm obsessed with the possibilities of design + technology. I live with my wife, two boys and Newfoundland in Laguna Beach CA. Hit me up for a coffee if your in the neighborhood.</p>              
             </div>
             <div className="block">              
               <h4 className="sm-type">Design</h4>
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="block">
               <h4 className="sm-type">Portfolios past</h4>
-              <p className="sm-type"><a href="http://2020.austenezzell.com/">2020</a>, <a href="http://2018.austenezzell.com/">2018</a>, <a href="http://2017.austenezzell.com/">2017</a>, <a href="http://2016.austenezzell.com/">2016</a>, <a href="http://2015.austenezzell.com/">2015</a>, <a href="http://2014.austenezzell.com/">2014</a>, <a href="http://2013.austenezzell.com/">2013</a>. Older versions lost.</p>
+              <p className="sm-type"><a href="http://2021.austenezzell.com/">2021</a>, <a href="http://2018.austenezzell.com/">2018</a>, <a href="http://2017.austenezzell.com/">2017</a>, <a href="http://2016.austenezzell.com/">2016</a>, <a href="http://2015.austenezzell.com/">2015</a>, <a href="http://2014.austenezzell.com/">2014</a>, <a href="http://2013.austenezzell.com/">2013</a>. Older versions lost.</p>
             </div>
             <div className="block double-m">
               <p className="sm-type">Feel free to reach out about collaborations</p>

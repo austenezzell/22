@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
     
     return(
         <Layout page={ page }>
-            <Seo title="Austen Ezzell — Creative Direction &amp; Design." />
+            <Seo title="Creative Direction and Design" />
             <div ref={ref}>
                 <section>
                     <div className="container hp-hero-vh gallery-container grid-margins">

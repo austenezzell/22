@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Copyright from "../images/copyright.inline.svg";
 import Ae from "../images/ae.inline.svg";
 import { Link } from 'gatsby';

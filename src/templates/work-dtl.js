@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Img from "gatsby-image"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 
 export default function workDtls({ data }) {
     const { description, title, assets, slug, team } = data.projectsJson
@@ -10,7 +11,6 @@ export default function workDtls({ data }) {
     const page = 'work-dtl-page';
     let asset;
     let allProjects = [];
-
     
     projects.forEach((project, index) => {
         project.next ? allProjects.push(project.next.slug) : allProjects.push('end');
@@ -20,12 +20,13 @@ export default function workDtls({ data }) {
     let nextPage = allProjects[currentPageIndex + 1];
 
     let assetType = (value) => {
-        value.video ? asset = <video autoplay="autoplay" muted="true" playsInline loop  ><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/>
+        value.video ? asset = <video autoPlay muted playsInline loop><source src={ value.video } type="video/mp4" /></video> : asset = <Img fluid={value.asset.childrenImageSharp[0].fluid}/>
         return asset;
     }
     
     return (
         <Layout page={ page }>
+            <Seo title={ title } />
             <header className='work-dtl-nav'>
                 <ul>
                     <li><Link to="/" className='sm-text'>&larr; Austen Ezzell</Link></li>
