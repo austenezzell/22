@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Austen Ezzell`,
     description: `The design practice of Austen Ezzell ©2022`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `@austenezzell`,
+    siteUrl: `https://www.austenezzell.com/`,
+    image: '/og.png',
   },
   plugins: [
     `gatsby-plugin-sass`,
