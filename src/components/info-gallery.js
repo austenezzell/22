@@ -27,8 +27,6 @@ const InfoGallery = () => {
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
 
-    console.log(photos)
-
     function resetTimeout() {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
@@ -53,7 +51,7 @@ const InfoGallery = () => {
     return (
         <div className="info-gallery container">       
             {photos.map((image, count) => (
-                <div key={image.node.id} className={ index === count ? "active image" : " image" }>                        
+                <div key={image.node.childImageSharp.id} className={ index === count ? "active image" : " image" }>                        
                     <Img fluid={ image.node.childImageSharp.fluid }/>
                 </div>
             ))}
