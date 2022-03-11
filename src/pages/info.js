@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
           <div className="box-2">
             <div className="block">
               <h4 className="sm-type">Personal</h4>
-              <p className="sm-type">Design found me. I set out to become an artist or an athelete and eventually realized that the design process was the magic that helped me connect the things I love. I have a degree in Marketing & Art History. I’m a self taught front-end developer and I'm obsessed with the possibilities of design + technology. I live with my wife, two boys and Newfoundland in Laguna Beach CA. Hit me up for a coffee if your in the neighborhood.</p>              
+              <p className="sm-type">Design found me. I set out to become an artist or an athelete and eventually realized that the design process was the magic that helped me connect the things I love. I have degrees in Marketing &amp; Art History. I’m a self taught front-end developer and I'm obsessed with the possibilities of design + technology. I live with my wife, two boys and Newfoundland in Laguna Beach CA. Hit me up for a coffee if your in the neighborhood.</p>              
             </div>
             <div className="block">              
               <h4 className="sm-type">Design</h4>
