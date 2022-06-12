@@ -221,7 +221,7 @@
     },
     {
         "slug": "the-sacred-fig",
-        "date": "2022",
+        "date": "2021",
         "title": "The Sacred Fig",
         "keyArt": "../images/work/fig/fig_0.jpg",
         "keyArtVideo": "",
@@ -536,7 +536,127 @@
                 "video": ""
             }
         ]      
-    }    
+    },
+    
+    {
+        "slug": "dialpad",
+        "date": "2022",
+        "title": "Dialpad",
+        "keyArt": "../images/work/dialpad/dialpad_02.png",
+        "keyArtVideo": "",
+        "keyArtAspectRatio": "landscape",
+        "description": "Dialpad offers one, beautiful workspace for anywhere communication & collaboration - all powered by the most advanced communications Ai in the world. I joined the team to help scale the design practice in preparation for a public offering. With the help of an amazing team, we are creating a design practice at scale while building a brand that resonates. In our short time here, the team has contributed to a dramatic improvement in performance, established a new brand platform, visual identity and digital experience — and we are just starting.",
+        "team": [
+            {
+                "person": "JP Walti",
+                "link": "https://www.linkedin.com/in/johnpaulwalti/"
+            },
+            {
+                "person": "Morgan Norman",
+                "link": "https://twitter.com/meetmorg?lang=en"
+            },
+            {
+                "person": "Kat Chen",
+                "link": "https://www.linkedin.com/in/katherinegracechen/"
+            },                                
+            {
+                "person": "Brendan Miller",
+                "link": "http://brendanmiller.xyz/"
+            },  
+            {
+                "person": "Wyn Merchant",
+                "link": "https://www.linkedin.com/in/wynmerchant/"
+            },                                                
+            {
+                "person": "Maria Janosko",
+                "link": "http://kristinhurley.com/"
+            }
+        ],
+        "assets": [
+            {
+                "asset": "../images/work/dialpad/dialpad_01.png",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_02.png",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_04.jpg",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_03.png",
+                "class": "centered",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_05.png",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_06.png",
+                "class": "centered",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_07.png",
+                "class": "repeat",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_08.png",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_09.png",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_10.jpg",
+                "class": "centered",
+                "video": ""
+            },            
+            {
+                "asset": "../images/work/dialpad/dialpad_12.png",
+                "class": "full",
+                "video": ""
+            },            
+            {
+                "asset": "../images/work/dialpad/dialpad_11.png",
+                "class": "full",
+                "video": ""
+            },
+
+            {
+                "asset": "../images/work/dialpad/dialpad_13.jpg",
+                "class": "centered",
+                "video": ""
+            },
+
+            {
+                "asset": "../images/work/dialpad/dialpad_15.jpg",
+                "class": "full",
+                "video": ""
+            },
+            {
+                "asset": "../images/work/dialpad/dialpad_14.jpg",
+                "class": "centered",
+                "video": ""
+            },            
+            {
+                "asset": "../images/work/dialpad/dialpad_16.png",
+                "class": "full",
+                "video": ""
+            }
+        ]      
+    }
     
 
                     

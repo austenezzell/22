@@ -470,6 +470,7 @@ vr {
     img, video {
       width: 100%;
       height: auto;
+      // border-radius: unquote(($base-unit * 1) + 'px');
     }
   }
 }
@@ -510,7 +511,16 @@ vr {
 
 // ARCHIVE PAGE
 .archive-page {
-  background: $tan;
+  background: black;
+  .header {
+    color: white;
+  }
+  .header a {
+    color: white;
+    &:hover {
+      color: $green;
+    }
+  }
   .main-content {
     margin-top: unquote(($base-unit * 12) + 'px');
   }
@@ -646,7 +656,17 @@ vr {
     max-width: 100%;
     height: auto;
   }
-
+  .footer {
+    a {
+      color: white;
+      &:hover {
+        color: $green;
+      }
+    }
+    svg path {
+      fill: white;
+    }
+  }
 }
 
 //WORK DETAIL PAGE

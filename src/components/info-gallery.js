@@ -49,7 +49,9 @@ const InfoGallery = () => {
     }, [index]);
 
     return (
+        
         <div className="info-gallery container">       
+
             {photos.map((image, count) => (
                 <div key={image.node.childImageSharp.id} className={ index === count ? "active image" : " image" }>                        
                     <Img fluid={ image.node.childImageSharp.fluid }/>
